@@ -18,10 +18,10 @@ mongoose.connect(
         useUnifiedTopology: true,
     }
 );
-app.listen(PORT, () => {
-    console.log(`App is running on port ${PORT}!`)
-});
-
 // Route files not made yet, will continue tomorrow.
 app.use(require("./routes/index.js"));
 app.use(require('./routes/api.js'));
+
+app.listen(PORT, () => {
+    console.log(`App is running on port ${PORT}!`)
+});
