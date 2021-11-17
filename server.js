@@ -18,7 +18,7 @@ mongoose.connect(
         useUnifiedTopology: true,
     }
 );
-// Route files not made yet, will continue tomorrow.
+
 app.use(require("./routes/index.js"));
 app.use(require('./routes/api.js'));
 
